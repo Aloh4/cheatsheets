@@ -1,4 +1,4 @@
-##1 - Conceitos DOCSIS
+## 1 - Conceitos DOCSIS
 
 	DOCSIS  - Data Over Cable Service Interface Specification
 		- Padrão aberto desenvolvido pelo cable labs afim de baratear o serviço de banda larga em redes HFC.
@@ -16,7 +16,7 @@
 	Nunca deve haver Tx maior que 52dB
 ---------------------
 
-##Processo Sync do Cabe Modem
+## Processo Sync do Cabe Modem
 
 	CM envia DHCP Discover ao CMTS
 	CMTS envia a requisição ao servidor DHCP, que verifica no LDAP a existência do equipamento
@@ -29,11 +29,11 @@
 	No Docsis 1.1, cada serviço pode ter garantia de qualidade baseados no QoS (largura de banda, jitter)
 ----------------------
 
-##BSod -	Implementa o DOCSIS L2VPN (Layer-2 VPN) que consiste na entrega de uma VLAN transparente do roteador da operadora até o CM (L2 Transparent Lan Service) (TLS)
+## BSod -	Implementa o DOCSIS L2VPN (Layer-2 VPN) que consiste na entrega de uma VLAN transparente do roteador da operadora até o CM (L2 Transparent Lan Service) (TLS)
 Business Services over DOCSIS
 
 
-##Tecnologias usadas:
+## Tecnologias usadas:
 
 
 	nRTPS - Non Real Time Polling Service - Um dos tipos de QoS que podem ser configurados no CM
@@ -57,7 +57,7 @@ Business Services over DOCSIS
 		CM possui attribute-mask = 0x02 = Virtua
 		CM possui attribute-mask = 0x01 = BSoD
 
-##Importante:
+## Importante:
 
 	O tráfego dos clientes BSoD, trafegarão por links Embratel exclusivos, não competindo com clientes Virtua
 	Todo o tráfego BSoD, será transportado utilizando QinQ dentro da rede NET, utilizando apenas uma VLAN de transporte
@@ -93,7 +93,7 @@ Business Services over DOCSIS
 		2 - Tem a mesma função da Wideband-Cable, porém para outras versões do DOCSIS (1.x, 2.0)
 
 ----------------------
-##CMTS - > Cable Modem Termination System
+## CMTS - > Cable Modem Termination System
 
 	Conjunto de dispositivos com funções específicas para gerar, processar, transmitir e receber dados e gerenciar sua transmissão através da rede DOCSIS
 	
