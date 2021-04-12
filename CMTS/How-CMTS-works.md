@@ -99,9 +99,9 @@ Business Services over DOCSIS
 	
 	Loopbacks utilizadas:
 
-		10 - Clientes Virtua
+		10 - Clientes Gerais
 		30 - HDTV
-		80 - PME
+		80 - Empresas
 		100 - Sem cadastro
 
 	LoadBalance = Distribui igualmente o tráfego de voz/dados entre as US e DS pertencentes ao mesmo grupo.
