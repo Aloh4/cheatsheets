@@ -66,7 +66,7 @@ Business Services over DOCSIS
 	Não se pode dentro do CMTS, haver 2 VLAN ID's iguais, caso contrário, apenas 1 será sincronizado.
 	O VLAN ID será sincronizado no LDAP 
 
---
+--------
 
 	Loopbacks/Bundle/Cable-mac = Vai o endereço default de cada rede, sem o loopback, os cables não tem referencia de classe!
 		    	   Cada loopback, deve ter uma classe de IP primária, e caso exista serviços por IP, deve haver uma classe IP secundária
