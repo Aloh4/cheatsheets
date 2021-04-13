@@ -35,7 +35,6 @@ select * from TABLE limit 10;
 * Select de Colunas
 
 ```
-select COLUMN from TABLE where
 select COLUMN from TABLE limit 10;
 select * from TABLE limit 10
 ```
@@ -44,14 +43,13 @@ select * from TABLE limit 10
 
 ```
 select COLUMN from TABLE1 where COLUMN='2021-01-16' limit 10;
-select COLUMN from TABLE1 where COLUMN="2020-01-16" limit 10;
 select COLUMN from TABLE1 where COLUMN like "2020-01-%" limit 10;
 
 select USERID from USERS where USERID like "100%";
 select COLUMN from TABLE where COLUMN="valor_exato"; 
 ```
 
-## Selecionar multiplas COLUMNS
+* Select multiplas COLUMNS
 
 ```
 select COLUMN1,COLUMN2 from TABLE limit 10;
@@ -74,7 +72,7 @@ select count(STATUS) from EVENT_LOG where LASTUPDATED like "2020-01-%" and STATU
 ## Pendentes:
 
 ```
-Trucante, Inner Join, Update
+Truncate, Inner Join, Update
 Clustering (joining missing nodes on mysqlrouter)
 ```
 
