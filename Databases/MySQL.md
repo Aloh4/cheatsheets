@@ -15,7 +15,7 @@ mysql -u user -p -P 6446 --protocol=TCP "select from TABLE where equipamentid in
 
 ```
 show databases;
-user databaseX;
+use databaseX;
 show tables;
 show tables from DATABASE X;
 show columns from TABLE;
