@@ -67,7 +67,7 @@ select * from TABLE;
 select * from TABLE limit 10;
 ```
 
-* **Select de Colunas**
+* **Select Columns**
 
 ```
 select COLUMN from TABLE limit 10;
@@ -75,7 +75,7 @@ select COLUMN from TABLE where COLUMN...;
 
 ```
 
-* **Select com Where:**
+* **Select with Where:**
 
 ```
 
