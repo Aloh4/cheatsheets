@@ -6,11 +6,13 @@ Links: https://www.w3schools.com/sql/
 
 * **Options:**
 
+
 <table>
- <tr>1</tr>
- <tr>2</tr>
- <td>3</td>
- </table>
+<tr>
+<th>Parameter</th>
+<th>What means?</th>
+</tr>
+</table>
 
 ```
 -e - Execute command
