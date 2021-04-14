@@ -1,22 +1,5 @@
 Links: https://www.sqltutorial.org <p>
 Links: https://www.w3schools.com/sql/
-<html>
-<head>
-<style>
-/* This is a single-line comment */
-p {
-  color: red;
-} 
-</style>
-</head>
-<body>
-
-<p>Hello World!</p>
-<p>This paragraph is styled with CSS.</p>
-<p>CSS comments are not shown in the output.</p>
-
-</body>
-</html>
 
 
 ## Login:
