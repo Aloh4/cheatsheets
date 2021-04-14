@@ -1,8 +1,8 @@
 Rejoining MySQL nodes on Cluster:
 https://dev.mysql.com/doc/mysql-router/8.0/en/mysql-router-deploying-sandbox.html
 
-* **Checking processes:**
 --------------------
+* **Checking processes:**
 
 ```
 ps -ef | grep -E "mysqlrouter|mysql"
@@ -11,8 +11,8 @@ systemctl status mysqlrouter / mysqld
 
 ```
 
-* **Check Cluster STATUS:** (via mysqlsh)
 --------------------
+* **Check Cluster STATUS:** (via mysqlsh)
 
 * Obs: It must be done from a working node
 
@@ -61,22 +61,22 @@ MySQL  SERVER_1:3306  JS > cluster.status ()
 
 ```
 
-* **Login:**
 --------------------
+* **Login:**
 
 ```
 bash~# mysqlsh --uri root@${hostname}:3306
 ```
 
-* **Define Cluster variable**
 --------------------
+* **Define Cluster variable**
 
 ```
 MySQL SERVER_1:3306 JS > var cluster = dba.getCluster()
 ```
 
+--------------------
 * **Rejoin**
--------------
 
 ```
 MySQL SERVER_1:3306 JS > cluster.rejoinInstance ('SERVER_2:3306')
@@ -84,9 +84,8 @@ MySQL SERVER_1:3306 JS > cluster.rejoinInstance ('SERVER_2:3306')
 Obs: SERVER_2 is the hostname of the FAILED/MISSING node
 ```
 
-
+--------------------
 * **Recover ERROR STATUS from simultaneous SQL nodes**
-------------------
 
 In cases where all servers are failed, you can't check the Cluster Status <p>
 All MySQL processes must be restarted, in all the servers from the Cluster <p>
