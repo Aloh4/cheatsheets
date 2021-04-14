@@ -1,9 +1,8 @@
 Links: https://www.sqltutorial.org <p>
 Links: https://www.w3schools.com/sql/
 
-
-## Login:
 ------
+## Login:
 
 * **Options:**
 
@@ -47,8 +46,8 @@ mysql -uUSER -pPASS -D DATABASE -P 6446 --protocol=TCP
 mysql -uUSER -p -D DATABASE -P 6446 --protocol=TCP -e "select ACCOUNTID from ACCOUNT limit 10;"
 ```
 
-## Show Databases/Tables/Columns:
 --------------
+## Show Databases/Tables/Columns:
 
 ```
 show databases;
@@ -58,8 +57,8 @@ show tables from DATABASE X;
 show columns from TABLE;
 ```
 
-## Selecting Data:
 --------------
+## Selecting Data:
 
 * **Select geral:**
 
@@ -112,6 +111,7 @@ select count(STATUS) from EVENT_LOG where LASTUPDATED like "2020-01-%" and STATU
 
 ```
 
+--------------
 ## Pending notes:
 
 ```
