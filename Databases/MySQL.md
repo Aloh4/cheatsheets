@@ -1,5 +1,5 @@
-https://www.sqltutorial.org
-https://www.w3schools.com/sql/
+Links: https://www.sqltutorial.org
+Links: https://www.w3schools.com/sql/
 
 ## Login:
 ------
