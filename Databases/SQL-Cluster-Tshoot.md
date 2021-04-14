@@ -20,6 +20,7 @@ systemctl status mysqlrouter / mysqld
 * Obs: It must be done from a working node
 
 * **Method 1**
+
 ```
 bash~# mysqlsh
 MySQL SERVER_1:3306 JS > cluster = dba.getCluster()
@@ -78,11 +79,16 @@ MySQL  SERVER_1:3306  JS > cluster.status ()
 
 ```
 bash~# mysqlsh --uri root@${hostname}:3306
+
+Remote Hosts:
+shell.connect(INSTANCE_NAME)
+
 ```
 
 * **Rejoin**
 
 ```
+
 MySQL SERVER_1:3306 JS > cluster = dba.getCluster()
 
 MySQL SERVER_1:3306 JS > cluster.rejoinInstance ('SERVER_2:3306')
