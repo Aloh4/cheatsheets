@@ -6,22 +6,6 @@ Links: https://www.w3schools.com/sql/
 
 * **Options:**
 
-
-<table>
-<tr>
-<th>Parameter</th>
-<th>What means?</th>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-</tr>
-
-
-</table>
-
 ```
 -e - Execute command
 -D - DATABASE to user
