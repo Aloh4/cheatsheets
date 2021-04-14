@@ -60,7 +60,7 @@ show columns from TABLE;
 ## Selecting Data:
 --------------
 
-* Select geral:
+* **Select geral:**
 
 ```
 select * from TABLE;
