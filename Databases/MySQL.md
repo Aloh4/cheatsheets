@@ -1,4 +1,4 @@
-Links: https://www.sqltutorial.org
+Links: https://www.sqltutorial.org \n
 Links: https://www.w3schools.com/sql/
 
 ## Login:
