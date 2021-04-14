@@ -17,7 +17,7 @@ systemctl status mysqlrouter / mysqld
 * Obs: It must be done from a working node
 
 ```
-hostname=`hostname`;mysqlsh --uri root@${hostname}:3306 -e 'print(dba.getCluster().status())'
+bash~# hostname=`hostname`;mysqlsh --uri root@${hostname}:3306 -e 'print(dba.getCluster().status())'
 
 
 Output Example:
@@ -65,7 +65,7 @@ MySQL  SERVER_1:3306  JS > cluster.status ()
 --------------------
 
 ```
-mysqlsh --uri root@${hostname}:3306
+bash~# mysqlsh --uri root@${hostname}:3306
 ```
 
 * **Define Cluster variable**
