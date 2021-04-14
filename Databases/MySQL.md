@@ -17,25 +17,33 @@ https://www.w3schools.com/sql/
 
 ```
 
+* Default:
+
 ```
-Default:
 mysql -uroot -pPASS -D DATABASE -h host
 
 Setting HOST:
 mysql -uroot -h HOST -p
+```
 
-MySQL router connection:
+
+* MySQL router connection:
+
+```
 mysql -uUSER -p -P 6446 --protocol=TCP (gonna ask to provide password)
 mysql -uUSER -pPASS -P 6446 --protocol=TCP
+```
 
-Using a specific DATABASE:
+* Using a specific DATABASE:
+
+```
 mysql -uUSER -pPASS -D DATABASE -P 6446 --protocol=TCP
+```
 
-Executing Commands:
+* Executing Commands:
+
+```
 mysql -uUSER -p -D DATABASE -P 6446 --protocol=TCP -e "select ACCOUNTID from ACCOUNT limit 10;"
-
-
-
 ```
 
 ## Show Databases/Tables/Columns:
