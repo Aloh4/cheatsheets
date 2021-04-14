@@ -24,8 +24,6 @@ Output Example:
 
 * Obs: **R/W** is the **MASTER** !
 
-```
-
 MySQL  SERVER_1:3306  JS > cluster.status ()
 {
     "clusterName": "SACCluster", 
@@ -60,9 +58,6 @@ MySQL  SERVER_1:3306  JS > cluster.status ()
         }
     }, 
     "groupInformationSourceMember": "mysql://root@SERVER_1:3306"
-
-```
-
 
 ```
 
