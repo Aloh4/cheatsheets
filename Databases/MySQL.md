@@ -1,20 +1,22 @@
 Links: https://www.sqltutorial.org <p>
 Links: https://www.w3schools.com/sql/
- 
- <table>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <td>February</td>
-    <td>$80</td>
-  </tr>
-</table>
+<html>
+<head>
+<style>
+/* This is a single-line comment */
+p {
+  color: red;
+} 
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p>This paragraph is styled with CSS.</p>
+<p>CSS comments are not shown in the output.</p>
+
+</body>
+</html>
 
 
 ## Login:
