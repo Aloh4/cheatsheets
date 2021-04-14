@@ -12,6 +12,12 @@ Links: https://www.w3schools.com/sql/
 <th>Parameter</th>
 <th>What means?</th>
 </tr>
+<tr>
+<td>1</td>
+<td>2</td>
+</tr>
+
+
 </table>
 
 ```
