@@ -1,13 +1,41 @@
+https://www.sqltutorial.org
+https://www.w3schools.com/sql/
 
 ## Login:
 ------
 
+* Options:
+
 ```
+-e - Execute command
+-D - DATABASE to user
+-u - USER
+-p - PASS
+-P - PORT
+-h - HOST
+--protocol=
+
+```
+
+```
+Default:
+mysql -uroot -pPASS -D DATABASE -h host
+
+Setting HOST:
+mysql -uroot -h HOST -p
+
+MySQL router connection:
 mysql -uUSER -p -P 6446 --protocol=TCP (gonna ask to provide password)
 mysql -uUSER -pPASS -P 6446 --protocol=TCP
 
-A testar:
-mysql -u user -p -P 6446 --protocol=TCP "select from TABLE where equipamentid in (select equipamentid from (SELECT * from ...)
+Using a specific DATABASE:
+mysql -uUSER -pPASS -D DATABASE -P 6446 --protocol=TCP
+
+Executing Commands:
+mysql -uUSER -p -D DATABASE -P 6446 --protocol=TCP -e "select ACCOUNTID from ACCOUNT limit 10;"
+
+
+
 ```
 
 ## Show Databases/Tables/Columns:
@@ -15,7 +43,7 @@ mysql -u user -p -P 6446 --protocol=TCP "select from TABLE where equipamentid in
 
 ```
 show databases;
-use databaseX;
+user databaseX;
 show tables;
 show tables from DATABASE X;
 show columns from TABLE;
@@ -23,7 +51,6 @@ show columns from TABLE;
 
 ## Selecting Data:
 --------------
-
 
 * Select geral:
 
@@ -36,43 +63,50 @@ select * from TABLE limit 10;
 
 ```
 select COLUMN from TABLE limit 10;
-select * from TABLE limit 10
+select COLUMN from TABLE where COLUMN...;
+
 ```
 
 * Select com Where:
 
 ```
+
+select COLUMN from TABLE where COLUMN="valor_exato";
 select COLUMN from TABLE1 where COLUMN='2021-01-16' limit 10;
-select COLUMN from TABLE1 where COLUMN like "2020-01-%" limit 10;
 
 select USERID from USERS where USERID like "100%";
-select COLUMN from TABLE where COLUMN="valor_exato"; 
+select COLUMN from TABLE1 where COLUMN like "2020-01-%" limit 10;
+ 
 ```
 
-* Select multiplas COLUMNS
+## Selecting multiples COLUMNS
 
 ```
 select COLUMN1,COLUMN2 from TABLE limit 10;
 select ACCOUNTID,ACCOUNTNUMBER from ACCOUNT limit 10
 ```
 
-* Contando registros:
+* Counting registers:
 
 ```
-select count(*) COLUMN from TABLE;
+select count(*) from TABLE;
 select count(COLUMN) from TABLE;
 select count(ACCOUNTID) from ACCOUNT;
+```
 
+* Conditional counting
+
+```
 select count(COLUMN) from TABLE where COLUMN_1 like "2020-01-%" and COLUMN_2='FAILED';
 select count(EVENTLOGID) from EVENT_LOG where LASTUPDATED like "2021-04-%";
 select count(STATUS) from EVENT_LOG where LASTUPDATED like "2020-01-%" and STATUS='FAILED';
 
 ```
 
-## Pendentes:
+## Pending notes:
 
 ```
-Truncate, Inner Join, Update
+Trucante, Inner Join, Update
 Clustering (joining missing nodes on mysqlrouter)
 ```
 
