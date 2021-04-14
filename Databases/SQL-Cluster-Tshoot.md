@@ -106,5 +106,3 @@ MySQL SERVER_1:3306 JS > dba.rebootClusterFromCompleteOutage()
 
 
 ```
-
-![teste](https://user-images.githubusercontent.com/17357355/114639050-5388ab00-9ca3-11eb-882f-91b396f30ed2.jpg)
