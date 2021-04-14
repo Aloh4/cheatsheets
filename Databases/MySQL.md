@@ -67,7 +67,7 @@ select * from TABLE;
 select * from TABLE limit 10;
 ```
 
-* Select de Colunas
+* **Select de Colunas**
 
 ```
 select COLUMN from TABLE limit 10;
@@ -75,7 +75,7 @@ select COLUMN from TABLE where COLUMN...;
 
 ```
 
-* Select com Where:
+* **Select com Where:**
 
 ```
 
@@ -94,7 +94,7 @@ select COLUMN1,COLUMN2 from TABLE limit 10;
 select ACCOUNTID,ACCOUNTNUMBER from ACCOUNT limit 10
 ```
 
-* Counting registers:
+* **Counting registers:**
 
 ```
 select count(*) from TABLE;
@@ -102,7 +102,7 @@ select count(COLUMN) from TABLE;
 select count(ACCOUNTID) from ACCOUNT;
 ```
 
-* Conditional counting
+* **Conditional counting:**
 
 ```
 select count(COLUMN) from TABLE where COLUMN_1 like "2020-01-%" and COLUMN_2='FAILED';
