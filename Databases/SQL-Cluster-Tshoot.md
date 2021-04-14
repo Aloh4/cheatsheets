@@ -1,6 +1,8 @@
-## Guides: <p>
-https://dev.mysql.com/doc/mysql-shell/8.0/en/troubleshooting-innodb-cluster.html <p>
-https://dev.mysql.com/doc/mysql-router/8.0/en/mysql-router-deploying-sandbox.html <p>
+Guides:
+
+https://dev.mysql.com/doc/mysql-shell/8.0/en/troubleshooting-innodb-cluster.html
+
+https://dev.mysql.com/doc/mysql-router/8.0/en/mysql-router-deploying-sandbox.html
 
 --------------------
 * **Checking processes:**
@@ -16,6 +18,16 @@ systemctl status mysqlrouter / mysqld
 * **Check Cluster STATUS:** (via mysqlsh)
 
 * Obs: It must be done from a working node
+
+* **Method 1**
+```
+bash~# mysqlsh
+MySQL SERVER_1:3306 JS > cluster = dba.getCluster()
+MySQL SERVER_1:3306 JS > cluster.status()
+
+```
+
+* **Method 2**
 
 ```
 bash~# hostname=`hostname`;mysqlsh --uri root@${hostname}:3306 -e 'print(dba.getCluster().status())'
@@ -61,7 +73,6 @@ MySQL  SERVER_1:3306  JS > cluster.status ()
     "groupInformationSourceMember": "mysql://root@SERVER_1:3306"
 
 ```
-
 --------------------
 * **Login:**
 
@@ -69,17 +80,12 @@ MySQL  SERVER_1:3306  JS > cluster.status ()
 bash~# mysqlsh --uri root@${hostname}:3306
 ```
 
---------------------
-* **Define Cluster variable**
-
-```
-MySQL SERVER_1:3306 JS > var cluster = dba.getCluster()
-```
-
---------------------
 * **Rejoin**
 
 ```
+MySQL SERVER_1:3306 JS > cluster = dba.getCluster()
+MySQL SERVER_1:3306 JS > cluster.status()
+
 MySQL SERVER_1:3306 JS > cluster.rejoinInstance ('SERVER_2:3306')
 
 Obs: SERVER_2 is the hostname of the FAILED/MISSING node
@@ -101,8 +107,8 @@ is not available through a session to a standalone instance
 * **Commands**
 
 ```
-MySQL SERVER_1:3306 JS > var cluster = dba.getCluster()
+MySQL SERVER_1:3306 JS > cluster = dba.getCluster()
 MySQL SERVER_1:3306 JS > dba.rebootClusterFromCompleteOutage()
 
-
 ```
+------ 
