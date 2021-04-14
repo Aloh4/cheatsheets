@@ -84,7 +84,6 @@ bash~# mysqlsh --uri root@${hostname}:3306
 
 ```
 MySQL SERVER_1:3306 JS > cluster = dba.getCluster()
-MySQL SERVER_1:3306 JS > cluster.status()
 
 MySQL SERVER_1:3306 JS > cluster.rejoinInstance ('SERVER_2:3306')
 
