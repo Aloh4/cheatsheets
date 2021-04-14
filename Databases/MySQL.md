@@ -6,6 +6,12 @@ Links: https://www.w3schools.com/sql/
 
 * **Options:**
 
+<table>
+ <tr>1</tr>
+ <tr>2</tr>
+ <td>3</td>
+ </table>
+
 ```
 -e - Execute command
 -D - DATABASE to user
